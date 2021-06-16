@@ -1,0 +1,37 @@
+modelo de aprendizaje automatico supervisado que haga uso de informacion relacional
+
+networkx -> se utiliza en la practica de reyes bayesianas. Se recomienda utilizarla para el tratamiento del grafo.
+networkx -> Metricas interesantes: grado, centralidad.
+
+
+minimo -> probar una metrica relacional, un feauture relacional y un modelo de machine learning. 
+	Coger grafo, extraer tabla, propiedades, etc. Utilizar degree centrality.
+
+Grado-> propiedad relacional
+
+
+4/5 atributos relacionales y 4/5 modelos ML (para nota)
+
+
+nodos entre 50 y 1500
+
+
+
+
+
+
+networkx.org
+
+networkx.org/documentation/stable/reference/classes/generated/networkx.Graph.degree.html
+
+networkx.org/documentation/stable/reference/algorithms/centrality.html
+
+icon.colorado.edu
+
+networkx.org/documentation/stable/reference/classes/digraph.html
+
+import pandas as pd
+import networkx as nx
+input_data = pd.read_csv('test.csv', index_col=0)
+G = nx.DiGraph(input_data.values)
+
